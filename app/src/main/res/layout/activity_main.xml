@@ -13,10 +13,12 @@
         android:layout_height="100dp"
 
         android:background="@drawable/rock"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/paperBtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
         app:layout_constraintVertical_bias="0.43" />
 
 
@@ -24,6 +26,7 @@
         android:id="@+id/paperBtn"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:visibility="gone"
         android:background="@drawable/paper"
         app:layout_constraintBottom_toBottomOf="@+id/rockBtn"
         app:layout_constraintEnd_toStartOf="@+id/scissorsBtn"
@@ -34,6 +37,7 @@
         android:id="@+id/scissorsBtn"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:visibility="gone"
         android:background="@drawable/scissors"
         app:layout_constraintBottom_toBottomOf="@+id/rockBtn"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,6 +59,23 @@
         app:layout_constraintEnd_toEndOf="@+id/scissorsBtn"
         app:layout_constraintStart_toStartOf="@+id/rockBtn"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/welcomeText"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rock_paper_scissors_welcome"
+        android:scaleType="fitCenter"
+        android:textSize="56sp"
+
+        android:elevation="20dp"
+        android:textColor="#FF6F00"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
